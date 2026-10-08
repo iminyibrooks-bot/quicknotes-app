@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #eef2f3;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #0f766e;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+/* Centred main column */
+main {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* White section cards */
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+/* Form: Flexbox row */
+form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#note-input {
+  flex: 1;
+  min-width: 160px;
+}
+
+#search-input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+/* Error message */
+#error-message {
+  color: red;
+  margin-top: 8px;
+}
+
+/* Notes list and cards */
+#notes-list {
+  list-style: none;
+}
+
+#notes-list li {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-left: 6px solid #999;
+  border-radius: 6px;
+}
+
+.category-personal { border-left-color: teal; }
+.category-work     { border-left-color: darkred; }
+.category-study    { border-left-color: royalblue; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 16px;
+  color: #555;
+}
+
+/* Small screens: stack the form */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
